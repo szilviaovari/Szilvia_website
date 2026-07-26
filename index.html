@@ -16,6 +16,7 @@
 
     <!--add css,boostrap5,js-->
     <link rel="stylesheet" href="css_basic/style.css" type="text/css">
+    <link rel="stylesheet" href="scss_basic/style.scss">
     <link rel="stylesheet" href="bootstrap/bootstrap-5.2.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="scss/main.scss">
 
@@ -35,12 +36,14 @@
                     <li onclick=hideSidebar()><a href="#"><img src="img/navbar/close.png" alt="Close"></a></li>
                     <li><a href="#top">Home</a></li>
                     <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#skill-set">Skills</a></li>
                     <li><a href="#contact-me">Contact me</a></li>
                     <li><a href="./CV/Szilvia_Ovari_CV.pdf" target="_blank">See My CV</a></li>
                 </ul>
                 <ul>
                     <li class="hideOnMobile"><a href="#top">Home</a></li>
                     <li class="hideOnMobile"><a href="#about-me">About Me</a></li>
+                    <li class="hideOnMobile"><a href="#skill-set">Skills</a></li>
                     <li class="hideOnMobile"><a href="#contact-me">Contact me</a></li>
                     <li class="hideOnMobile"><a href="./CV/Szilvia_Ovari_CV.pdf" target="_blank">See My CV</a>
                     </li>
@@ -206,50 +209,67 @@
                 </div>
             </div>
         </div>
-
-        <div class="align-center">
+        <br>
+        <br>
+        <br>
+        <div id="skill-set" class="align-center">
             <div class="p-design">
-                <p>My Skills</p>
+                <p>Skill Set</p>
             </div>
         </div>
-
-        <div class="container d-flex justify-content-center mt-4 mb-5">
-            <div class="col-md-8 col-sm-12">
-
-                <div class="mb-3">
-                    <div class="d-flex justify-content-between">
-                        <span class="golden-text">HTML</span>
-                        <span>90%</span>
+        <section class="skills-section">
+        <table id="skillcards">
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <div class="skill-card-sm" data-skill="HTML5 - Magabiztos tudás, szemantikus kódolás.">
+                        <img src="img/logo/html.png" alt="html icon">
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 90%; background-color: #c9a84c;"></div>
+                </td>
+                <td>
+                    <div class="skill-card-sm" data-skill="CSS3 / SCSS - Animációk, Flexbox és modern elrendezések.">
+                        <img src="img/logo/css.png" alt="css icon">
                     </div>
-                </div>
-
-                <div class="mb-3">
-                    <div class="d-flex justify-content-between">
-                        <span class="golden-text">CSS</span>
-                        <span>80%</span>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <div class="skill-card-sm" data-skill="JavaScript - Interaktív elemek, DOM manipuláció és logikai fejlesztés.">
+                        <img src="img/logo/js.png" alt="js icon">
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 80%; background-color: #c9a84c;"></div>
+                </td>
+                <td></td>
+                <td></td>
+                <td>
+                    <div class="skill-card-sm" data-skill="Bootstrap 5 - Gyors, modern és teljesen mobilbarát elrendezések.">
+                        <img src="img/logo/csharp.png" alt="csharp icon">
                     </div>
-                </div>
-
-                <div class="mb-3">
-                    <div class="d-flex justify-content-between">
-                        <span class="golden-text">JavaScript</span>
-                        <span>60%</span>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="skill-card-sm" data-skill="C# - Objektumorientált programozás és szoftverfejlesztési alapok.">
+                        <img src="img/logo/bootstrap.png" alt="bootstrap icon">
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 60%; background-color: #c9a84c;"></div>
+                </td>
+                <td colspan="4">
+                    <div class="skill-description-box">
+                        <p id="skill-text">Vidd az egeret egy kártya fölé a részletekért!</p>
                     </div>
-                </div>
-
-            </div>
-        </div>
-        <br>
-        <br>
+                </td>
+                <td>
+                    <div class="skill-card-sm" data-skill="Canva - Grafikai tervezés, UI/UX skiccek és kreatív vizuális anyagok.">
+                        <img src="img/logo/canva.png" alt="canva icon">
+                    </div>
+                </td>
+            </tr>
+        </table>
+        </section>
         <br>
         <br>
         <section class="section-contact">
@@ -303,7 +323,6 @@
                 </div>
             </div>
         </section>
-        <br>
         <br>
         <br>
         <br>
@@ -410,6 +429,7 @@
                 <ul>
                     <li><a href="#top">HOME</a></li>
                     <li><a href="#about-me">ABOUT ME</a></li>
+                    <li><a href="#skill-set">SKILLS</a></li>
                     <li><a href="#contact-me">CONTACT ME</a></li>
                     <li><a href="CV/Szilvia_Ovari_CV.pdf" target="_blank">SEE MY CV</a></li>
                 </ul>
@@ -421,6 +441,7 @@
     </footer>
     <script src="js/popup.js"></script>
     <script src="js/morphs.js"></script>
+    <script src="js/skillcards.js"></script>
 </body>
 
 </html>
